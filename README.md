@@ -121,9 +121,14 @@ Make sure you have Visual Studio installed properly:
 - Under the Workloads tab, click Game development with C++ if it isn’t checked and then click Modify.
 
 1. Download the source code from the [Meta fork of Epic’s Unreal Engine on GitHub](https://github.com/Oculus-VR/UnrealEngine).
-2. Follow Epic’s instructions on [Building Unreal Engine from Source](https://docs.unrealengine.com/5.2/en-US/building-unreal-engine-from-source/) to complete the process.
-
-Depending on your machine, the build may take awhile to complete.
+2. Open a command prompt in the root of the Unreal, then run this command:
+```sh
+.\GenerateProjectFiles.bat -Game SharedAnchorsSample -Engine <full path to Unreal-SharedAnchorsSample directory>\SharedAnchorsSample.uproject
+```
+3. Open the `SharedAnchorsSample.sln` file that has been generated in the `Unreal-SharedAnchorsSample` directory.
+4. Set `SharedAnchorsSample` as the start-up project and `Development Editor` as the configuration.
+5. Hit `F5` to build and debug the project (and the engine).
+    - Depending on your machine, the build may take awhile to complete.
 
 # Licenses
 The Meta License applies to the SDK and supporting material. The MIT License applies to only certain, clearly marked documents. If an individual file does not indicate which license it is subject to, then the Meta License applies.

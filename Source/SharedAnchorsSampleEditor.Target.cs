@@ -11,11 +11,11 @@ using System.Collections.Generic;
 
 public class SharedAnchorsSampleEditorTarget : TargetRules
 {
-	public SharedAnchorsSampleEditorTarget(TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V4;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
-		ExtraModuleNames.AddRange(new string[] { "SharedAnchorsSample" });
-	}
+    public SharedAnchorsSampleEditorTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Editor;
+        DefaultBuildSettings = BuildSettingsVersion.V4;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
+        ExtraModuleNames.AddRange(new string[] { "SharedAnchorsSample" });
+    }
 }
