@@ -84,7 +84,17 @@ If you save the anchor to cloud storage, the following options appear:
 
 ### Prerequisites
 
-Follow the [prerequisites steps described in here](https://developer.oculus.com/documentation/unreal/unreal-spatial-anchors-sharing#prerequisites) in order for the sample to have the required entitlements.
+You must follow the [prerequisites steps described in here](https://developers.meta.com/horizon/documentation/unreal/unreal-spatial-anchors-sharing#prerequisites) otherwise anchor sharing will not work. Be prepared to spend at least a few hours going through these steps as they are not trivial. Here is a checklist of steps you need to take:
+
+1. Create an organisation on the Meta Quest developer dashboard (if you don't have one already)
+2. Create an application in your organisation to host this sample
+3. Add User ID and User Profile platform features to your application in Data Use Checkup
+4. Create test users to avoid waiting for Data Use Checkup review (optional)
+5. Change `[OnlineSubsystemOculus]` > `MobileAppId` in `DefaultEngine.ini` of this sample to match the ID of your app in the developer dashboard
+6. Change `[/Script/AndroidRuntimeSettings.AndroidRuntimeSettings]` > `PackageName` in `DefaultEngine.ini` of this sample to a unique name, for example `com.<yourorg>.UnrealSharedAnchorsTest`
+7. [Configure your app to upload to the Meta Quest developer dashboard](https://developers.meta.com/horizon/documentation/unreal/unreal-platform-tool) and upload it
+8. Login to your Quest devices with the test users you created earlier (optional)
+9. Download and install the sample app through the Meta Quest store
 
 ### Load the project
 
