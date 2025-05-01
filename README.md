@@ -1,6 +1,5 @@
 # Shared Anchors Sample
 
-<oc-devui-note color="note">Unreal Engine 4 is the only Unreal Engine version that supports sharing anchors.</oc-devui-note>
 <oc-devui-note color="note">Sharing anchors is available for Meta Quest Pro on v47 or higher, and for Quest 2 on v49 or higher. Quest 1 does not support sharing anchors.</oc-devui-note>
 
 This sample demonstrates the usage of [Spatial Anchors](https://developer.oculus.com/documentation/unreal/unreal-spatial-anchors/).
